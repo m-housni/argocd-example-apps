@@ -8,4 +8,5 @@ spec:
   ports:
   - port: 80
     targetPort: 80
-  type: ClusterIP
+    nodePort: 30080   # add this line
+  type: NodePort      # change this from ClusterIP
